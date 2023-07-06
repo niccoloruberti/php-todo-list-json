@@ -19,7 +19,6 @@ createApp({
                 'text': this.toDoItem,
                 'done': false,
             }
-
             axios.post('server.php', data, {
                 headers: { 'Content-type': 'multipart/form-data' }
             }).then((response) => {
